@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import {useParams} from "react-router-dom"
 const  CardDetails =({item})=>{
       const {productId} = useParams()
@@ -26,7 +27,7 @@ const  CardDetails =({item})=>{
                   <div className='desc'>
                         <p><strong>{thisProduct.description}</strong></p>
                   </div>
-<button className='btn btn-danger'>Add to Cart</button>
+<Link to={"/"}><button className='btn btn-danger'>Add to Cart</button></Link>
             </div>
       </div>
 </section>
