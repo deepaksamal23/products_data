@@ -10,7 +10,7 @@ function App() {
   const [item, setItem] = useState([])
   const  ProductData=()=>{
         axios.get('https://fakestoreapi.com/products').then((resp)=>{
-              console.log(resp.data);
+              // console.log(resp.data);
               setItem(resp.data)
         })
   }
@@ -20,12 +20,12 @@ function App() {
   return (
     <div className="App">
    
-    <Router>
+   <Router>
       <Routes>
       <Route  path="/" element={<Products  item={item}/>}  />
       <Route path="/products/:productId" element={<CardDetails item={item} />} />
       </Routes>
-    </Router>
+      </Router>
    
         </div>
   );

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import {useParams} from "react-router-dom"
 const  CardDetails =({item})=>{
       const {productId} = useParams()
-      const thisProduct = item.find(prod => prod.id == productId)
+      const thisProduct = item.find(prod => prod.id ==productId)
   return (
     <div>
           <div className="container mt-3">
@@ -11,7 +11,7 @@ const  CardDetails =({item})=>{
 <section className='sproduct'>
       <div className='row'>
             <div className='col-lg-5 col-md-12 col-12'>
-                  <img src={thisProduct.image}alt="" srcset="" />
+               <img src={thisProduct.image} alt="imageData"  />
             </div>
             <div className='col-lg-6 col-md-12 col-12 text-center '>
                   <h3>{thisProduct.title}</h3>

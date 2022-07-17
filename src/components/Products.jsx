@@ -9,14 +9,14 @@ const Products = ({item}) => {
     
      
           <div>
-    <h1 className='text-center '>Products</h1>
+    <h1 className='text-center col-lg-4 col-md-12 col-12 '>Products</h1>
     <div className="container  my-3   d-flex justify-content-center align-items-center">
       <div className="row ">
      {
       item.map((elem)=>{
 return(
       
-      <div className="col-lg-4 col-md-12 col-12  " >
+      <div className="col-lg-4 col-md-12 col-12  "  key={elem.id}>
             <div className="card mx-2 mt-4" style={{width: "20rem ",border:'none'}}>
   <Link to={`/products/${elem.id}`}> <img src={elem.image} className="card-img-top mt-3" alt="..." style={{height:'14rem'}}/></Link>
   <div className="card-body">
