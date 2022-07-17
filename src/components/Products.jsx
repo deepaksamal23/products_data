@@ -15,7 +15,6 @@ const Products = ({item}) => {
      {
       item.map((elem)=>{
 return(
-      
       <div className="col-lg-4 col-md-12 col-12  "  key={elem.id}>
             <div className="card mx-2 mt-4" style={{width: "20rem ",border:'none'}}>
   <Link to={`/products/${elem.id}`}> <img src={elem.image} className="card-img-top mt-3" alt="..." style={{height:'14rem'}}/></Link>

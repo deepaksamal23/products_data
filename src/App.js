@@ -15,7 +15,7 @@ function App() {
         })
   }
   useEffect(()=>{
-    ProductData();    
+    // ProductData();    
   },[])
   return (
     <div className="App">
